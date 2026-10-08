@@ -1,0 +1,2178 @@
+{
+  "recorded_date": "2026-09-18",
+  "source_root": "original ENGE3940 course folder (not published)",
+  "scope": "Source files read only; no model inference or metric reconstruction",
+  "artifact_files": [
+    {
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/final_variance_results.csv",
+      "destination": "data/flux.csv",
+      "source_sha256": "7fa27e91ce4e35fa547c0c4641565cf885ce7d2dbbd7e0dceaa7e5ed4c5e3312",
+      "output_sha256": "7fa27e91ce4e35fa547c0c4641565cf885ce7d2dbbd7e0dceaa7e5ed4c5e3312",
+      "transformation": "byte-for-byte copy",
+      "kind": "poem-level scores"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/final_variance_results.csv",
+      "destination": "data/stable_diffusion.csv",
+      "source_sha256": "d5da80567189d08ce980260822d269dc7f979e506bff2c3082531f4ba6131547",
+      "output_sha256": "d5da80567189d08ce980260822d269dc7f979e506bff2c3082531f4ba6131547",
+      "transformation": "byte-for-byte copy",
+      "kind": "poem-level scores"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/combined_grid_Flux_Imagism.jpg",
+      "destination": "assets/flux-imagism.jpg",
+      "source_sha256": "dc2463c6aa71441e941b799c22755a0f14dcf7f2a1ceb733f19d1f337edba5d6",
+      "output_sha256": "dc2463c6aa71441e941b799c22755a0f14dcf7f2a1ceb733f19d1f337edba5d6",
+      "transformation": "byte-for-byte copy",
+      "kind": "original selected image grid"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/combined_grid_Flux_Romanticism.jpg",
+      "destination": "assets/flux-romanticism.jpg",
+      "source_sha256": "86527630cdc809c20b64d14880961a720cc90fff9bb95410d756b0055a2203ed",
+      "output_sha256": "86527630cdc809c20b64d14880961a720cc90fff9bb95410d756b0055a2203ed",
+      "transformation": "byte-for-byte copy",
+      "kind": "original selected image grid"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/projFigure/Flux.1_Final.png",
+      "destination": "assets/archive/flux-results.png",
+      "source_sha256": "7f7deba367c9603693a658fe5ae9e4df4eaf47a21892f05800d3054388e452fa",
+      "output_sha256": "7f7deba367c9603693a658fe5ae9e4df4eaf47a21892f05800d3054388e452fa",
+      "transformation": "byte-for-byte copy",
+      "kind": "historical plot"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/projFigure/SD_Final.png",
+      "destination": "assets/archive/stable-diffusion-results.png",
+      "source_sha256": "b9ea251bdb23c959aae538dd7d8d2d1102bba2ef7d9ab84acfc845d49f6e753e",
+      "output_sha256": "b9ea251bdb23c959aae538dd7d8d2d1102bba2ef7d9ab84acfc845d49f6e753e",
+      "transformation": "byte-for-byte copy",
+      "kind": "historical plot; matches retained CSV p-value and embedded poster chart"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/Probability_Density_Map_Flux.png",
+      "destination": "assets/archive/flux-density.png",
+      "source_sha256": "37e77b3eb6a2562362060fb5fa0c643103cca7aae21a1ef038822b377ca8f12d",
+      "output_sha256": "37e77b3eb6a2562362060fb5fa0c643103cca7aae21a1ef038822b377ca8f12d",
+      "transformation": "byte-for-byte copy",
+      "kind": "historical KDE plot"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/Probability_Density_Map_SD.png",
+      "destination": "assets/archive/stable-diffusion-density.png",
+      "source_sha256": "c09615f81b0ab4228477bc567598cb117aa9174d7009d846644609ceada28d82",
+      "output_sha256": "c09615f81b0ab4228477bc567598cb117aa9174d7009d846644609ceada28d82",
+      "transformation": "byte-for-byte copy",
+      "kind": "historical KDE plot"
+    },
+    {
+      "source": [
+        "ENGE3940AI_and_Lang/project/combined_grid_Flux_Imagism.jpg",
+        "ENGE3940AI_and_Lang/project/combined_grid_Flux_Romanticism.jpg"
+      ],
+      "destination": "assets/poetry-samples.jpg",
+      "output_sha256": "0593c868513c2da6c0b426d0880af1b4c6111e94144c719801dcf0201b0fe29b",
+      "transformation": "Resize each original 2000x2000 JPEG to 990x990 using Lanczos, place side by side, add group/model archive labels; no image content generated",
+      "kind": "illustrative preview"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/PosterV2.pdf",
+      "source_sha256": "f6bff8603aefd5049cd58c6481069a854bab887a0d3c1b1a35355ae44a073969",
+      "source_page": 1,
+      "destination": "assets/archive/poster-workflow.png",
+      "output_sha256": "f4a8bc0bf0b23f030e5f3e88d7c70ff7878afb99949227431a13292245842c7a",
+      "transformation": "pdftoppm -scale-to 2400 -singlefile -png, then crop",
+      "render_dimensions_px": [
+        2400,
+        1323
+      ],
+      "crop_box_px": [
+        865,
+        164,
+        1541,
+        449
+      ],
+      "kind": "historical diagram with original wording"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/PosterV2.pdf",
+      "source_sha256": "f6bff8603aefd5049cd58c6481069a854bab887a0d3c1b1a35355ae44a073969",
+      "source_page": 1,
+      "destination": "assets/archive/poster-method-and-dataset.png",
+      "output_sha256": "f025d3a6ad64feb4b7dfa8ed19096a1b92024e83cdc595e261a2f317915027e7",
+      "transformation": "pdftoppm -scale-to 2400 -singlefile -png, then crop",
+      "render_dimensions_px": [
+        2400,
+        1323
+      ],
+      "crop_box_px": [
+        0,
+        956,
+        857,
+        1323
+      ],
+      "kind": "historical diagram with original wording"
+    }
+  ],
+  "source_image_audit": {
+    "total_images": 400,
+    "per_model": {
+      "flux": 200,
+      "stable_diffusion": 200
+    },
+    "unique_sha256": 400,
+    "duplicate_file_hashes": 0,
+    "warning": "Distinct bytes do not establish independent generation or validate the saved CLIP scores"
+  },
+  "source_images": [
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_000.png",
+      "sha256": "22f799506426d9bffc784da469898125a717038613dfdf4d2041740da60e50e8"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_001.png",
+      "sha256": "ed95fa8b2b4745ac7c3227e5c7c05f512249ce64d9c1e358254e93ecb6711b28"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_002.png",
+      "sha256": "ea2e6eb32cce14cfa33bce7b8160aa5d60eaccb21e639c3e59c0ed6635d7115c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_003.png",
+      "sha256": "bb77c25f375a634e1820207821f5c83635b28ef1512d5f91570e9fc2523fe85a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_004.png",
+      "sha256": "cb9a1d9dbd09f8f4324203f706f0e0238d01017f18d16295c503647c14ae934a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_005.png",
+      "sha256": "3cbacea12a32c4d98707098e438f88e550be7639f33fd5da182b03209c474e51"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_006.png",
+      "sha256": "56a5c592667ded2ebf4ac05ada9b6ac1cc5413b79b0cf82d71f02b53cdf8ae1a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_007.png",
+      "sha256": "40dbaecb9880abca9d59c4b49e56e43d008d37a6946e623132089fcf973ce4a7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_008.png",
+      "sha256": "5946aef6724fd31acb4cc4aa89999a347477ee13f8e681e8e00518668493969f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_009.png",
+      "sha256": "f57390078f11e29212072f96bf0476d1a7156674316c372489831d392cd4e5da"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_010.png",
+      "sha256": "18cc23ccb21db033a80b40a1d3e483e144dc204c41a14ea66a074c6fe5aeebd0"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_011.png",
+      "sha256": "65557dda269646e3ba4b015665c3bfa0c3db77c06e6cc9a8ec58546ef36edb43"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_012.png",
+      "sha256": "75ccc93c97c14295b51d6ea2140c60c7901e24f9dc30ef00ce80bcafc332d3a8"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_013.png",
+      "sha256": "abe7701bac25bdd326dcb2d4a211a30576f07eceee5fd86efc7710191f63c30e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_014.png",
+      "sha256": "8900ce53712ed2229be413cb1441671e858745513ed4e89fc719dbb6882d8cbe"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_015.png",
+      "sha256": "3e7d289019cc1b9802a5a66f6b911d10d69619b36ac57cff10625b2fd008de33"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_016.png",
+      "sha256": "abdf9a5c8b1a0b1f0571ccb2deab0c8b6ab4b8ce82a83f73b117d20c8cfca96c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_017.png",
+      "sha256": "df85c3f7d33a9037d5e0d7933cc8eba9f370574ce9b5c697030423b787b014e8"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_018.png",
+      "sha256": "b2124c021c66ef675cb783bbbf79c04a161ea32f66b0d3fa53a8c9eae6ca5562"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Autumn/sample_019.png",
+      "sha256": "630ad00cd0a49abc428278f96017aa7d5cbf44448553b14f096175ba0da364cc"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_000.png",
+      "sha256": "246bad5fd85e4b187088f81014e2f8dea9c3c9725c4f08315b5872b22f151eec"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_001.png",
+      "sha256": "2cdb2b340f4ce628e0ca446b4873f59a3f2ed398e6c664a1ec46dbc20aab4dfc"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_002.png",
+      "sha256": "c56fda1eb219f7f25af738a779960cb15780404f0dd7b17ae5c297a821b4fa80"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_003.png",
+      "sha256": "e772f009431bcafcb65ad48a46c53f2f69936cc4cf0502d423195b2a3516469e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_004.png",
+      "sha256": "3a4383e091cd4e63078e3d13396a0c839f0ccbacad9a35daef60a764e905688f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_005.png",
+      "sha256": "2a92ef7e0ed7143f432631556bbd0d91434b8988462523507a31707cba373a2f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_006.png",
+      "sha256": "035db1e8fa63450fc4177985cd410c6795a53729cfac64eb8bfde8e01370bea7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_007.png",
+      "sha256": "91b96b435a69e89174f54953146278ad4d9c9391e4dd3a6b158af984fdaeb555"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_008.png",
+      "sha256": "ca058ba447b0ff538ae21e816296f3af3dd02c5638f93f0b4c49bbf3beec5feb"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_009.png",
+      "sha256": "434a1965005f91171cbcc6754e0a4d3557e4500c1973fac15e214ae18cd2933b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_010.png",
+      "sha256": "b5acc2bcf494df51440cd84fbda4bd4494a32c6d64e86e94ea3984d1a2fa2be6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_011.png",
+      "sha256": "e640917211da27e817b8e2b80f142afda1d4d33d7aa3c4e90ddc91ff5929c5c7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_012.png",
+      "sha256": "63beeca212816f89f842b58a4f52490ec78f56404e17a5ed868e62d4f5177faa"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_013.png",
+      "sha256": "2a0e97e15ead8e760789d8a13de6f39f5da7ed52bd5be881f0ce9330171a8814"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_014.png",
+      "sha256": "db34ab80df2914ae5090954f67b71c75e2dd827b891a62a51c056bfe970c45ef"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_015.png",
+      "sha256": "6101dddefaebea22f33032fe0361252a812dd4b5f811851ececf2ae39ce7c1a5"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_016.png",
+      "sha256": "340bd240e98d3cfcac57e1a2cce1e487054581da989d0bfc36a6738eb13df1a9"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_017.png",
+      "sha256": "473bc04ac2b32356f5a350af76f3aac1d883c14a822f044bd31e9be1d9d0dcaf"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_018.png",
+      "sha256": "b445cd87d1b7a9a7f6e8fcade0d1d1098da8bcbd684917cd5697e3d72ed7b359"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/Round_Pond/sample_019.png",
+      "sha256": "985601afeb0610c6e37f856d59f706a161937d84ba63a1d73560dda91374df85"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_000.png",
+      "sha256": "d3d699032105718d64f0507d0e91f75e4a45060f98ca266f2ec86c18be3b7f4b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_001.png",
+      "sha256": "214501ccff23fe14b334bf0fb702737a992d027d13642061a4f366343f920c0c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_002.png",
+      "sha256": "1b7cbb13002f761dddd3ca2a5acec5f246ee005f1e67d0b8c192fbe4b740c2d1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_003.png",
+      "sha256": "2f1c240d186e5d7e0f1034fb2cd545944c6b99ee00529f51ab2f07cc660ecf2b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_004.png",
+      "sha256": "a907c127c36baf64b2c44b7da2739781e598ada713bb77a3cfbd0833a71c5d9f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_005.png",
+      "sha256": "50d621486fb05ff76f3abdc9e253ecc8467594cdd722fe12ffe97eccd8b29d54"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_006.png",
+      "sha256": "65a71f1654c0aab983aebfea45505c6b3fbe38417bf3375b6d37ef62ba5534a2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_007.png",
+      "sha256": "a6d1b09f9b0746d6e2a31a6f87fb26ad7b777a176a434e3337968b693e4698ea"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_008.png",
+      "sha256": "22fb40e3ef6712514348f707d30466c99969f8dd9c76a0600c20a862b87147c5"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_009.png",
+      "sha256": "25868acbc25557c74932718b5ecb9d39f6291bb8b937ab8831c58d7e4424fa87"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_010.png",
+      "sha256": "c8187782848702eef521badac44ee39c2304a53224defb86672ddf322319f459"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_011.png",
+      "sha256": "d2fbe9807fe9fb3e79bf34a1540a9aee039852a709374ae7bdcb254b9026dced"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_012.png",
+      "sha256": "9ea4a8781dcab0e84cca6663d4a2a104cd43da319093220c33d930108f56ef80"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_013.png",
+      "sha256": "76e8a305b34e66ea6bf49cc2e9d549554e808272c32a5ced701a7455d4e26225"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_014.png",
+      "sha256": "965acc97794277330f499db4966f063d13b535296d28528e569bcd183d59f3af"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_015.png",
+      "sha256": "55aa4ab72ec7d33fc96a0fb1716ddf246398487b68186c029c62cd1d0999af4f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_016.png",
+      "sha256": "2ecb39a95e625ec0da75c18c6de838b21c560bd6c9a937ddf5df438cb739b0b3"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_017.png",
+      "sha256": "83c5176a0c4e9ece00d5e660c4cdc25fe828e7ef549822d72f660bcc64236f1d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_018.png",
+      "sha256": "70350507e2af6f5af975dd6af08fded977c5c5b0ec9c4fd46781239e2253b905"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_City/sample_019.png",
+      "sha256": "3d1317c8e8633b67bda4436169a45ecee15a793eb6c5f587beae24c056e2a1fb"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_000.png",
+      "sha256": "34d44bc7dda2f4eca08ecf227338cc7c88bda3b119034eb7e9ef2e2aced29696"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_001.png",
+      "sha256": "7bc7286f364ebf3671b0c97ccc93a557c34f53466a11e3f57d79471d3e40fdfb"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_002.png",
+      "sha256": "000ce0c747edcdd3aad810a97edd36ba0070455374958e5eb0cbc876eb273e25"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_003.png",
+      "sha256": "9ba4faed346710c64d71c19f4b8c0021d9a963126028f5219fa8c1fcb259317d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_004.png",
+      "sha256": "7cc7275c776493a8084f3b912b14e2cd30e65099d18c619fa7f16a34f94be679"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_005.png",
+      "sha256": "1d8092c3dbfac2d55c05e7f6d52183a09fad14278a3e5f8d4b4ddba6f056fc4e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_006.png",
+      "sha256": "caa59b8530192dbe2899f91e29abb41e890d6abd000c826857c4972ed2ad8890"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_007.png",
+      "sha256": "7b6bca5deae722816ff04075d867e659d643e733c9f1a68dfb91c334477d0583"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_008.png",
+      "sha256": "ac9bc6aaf4dabdd328a0abfb41498263d060e538185ec7d3c4d9e7ef8cb04cac"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_009.png",
+      "sha256": "4a6c3b8e894f0fbb4740f453ef84d60dd39795bafb3b9288d424ac635002cf1e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_010.png",
+      "sha256": "5ec97845d31f72c3286e59cfd9141e0997d2b0ddda04e6c4c853aba62afe9dc6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_011.png",
+      "sha256": "01901ea0bc6cc5fda1de0568dfc32ec1f9ad80871d6dbec1e49d119939bfb4e1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_012.png",
+      "sha256": "76830d2a3a91145e46852e74c73a21d559690df043a2da5f9070421604e727ff"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_013.png",
+      "sha256": "dd32c63991e2a3ac7b4e6239d5d93337b5739e9ba772c006960236765b3107cc"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_014.png",
+      "sha256": "7300471c0f3ca2e06d488d33990463ecc120f71b9d596f2faadb664d79a2f20a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_015.png",
+      "sha256": "3af23d8a19c3d3fd60e86058b10fd99b11faa4f7ebf176ff39b18c3c7efd8d6b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_016.png",
+      "sha256": "e6e3f1adc9173316c325f59f08255b3094b0eccbcb014430c675e07cbdfd4006"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_017.png",
+      "sha256": "a67f2b0222584f9c8c21c09e42d4a8526865eadac290028d1fea18bc443927ec"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_018.png",
+      "sha256": "3c277088bf77c45961ec89abfdca0689396a907531b5bcc942fdff6f1791b68a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Great_Figure/sample_019.png",
+      "sha256": "dd71ca8be88b2259921d97ecc768907d7080fa2cbabf2dca1503d8a4a4627d2a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_000.png",
+      "sha256": "7623797984a90ce12522608e097b3ad49bdcc7147f0897e78972b3a8add8e88b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_001.png",
+      "sha256": "bd7e493585d988e93d9eaca806a6ca428d0c2b9eee93e00a04161d5a5518debe"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_002.png",
+      "sha256": "d40cad33d2df51429c20e4ace1d3a822b8642087a8aac15fb2ccc4c06b9c5e9b"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_003.png",
+      "sha256": "400f53bccb591b137a4663d673951ad2bdf2cc2d419fd9f2347a9ea4e0b6cdb6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_004.png",
+      "sha256": "5fb817b664d4679be91654265bb8816f65f6ac5cdaaab7b8132dc71e9195d3e9"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_005.png",
+      "sha256": "2e177860cfa3f2f07b6641ce86d108eab3a1ee579be0f48c2673d614e1415612"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_006.png",
+      "sha256": "57bc9d523f4f8bb7c5bbf961055b96ddd0565f13071275213d163371f6af3f44"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_007.png",
+      "sha256": "b88c1a567e48a5e7558e5b2c04f6df563b55dd27997276469803a2758d8940e4"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_008.png",
+      "sha256": "d19b8421f06cd952c209f050039c68728609892e237bd5203fd18800fc335332"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_009.png",
+      "sha256": "fb63f68891a62cd599d2ab27d3f091c8d81f62f3335ad1b6980a014db9b932f7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_010.png",
+      "sha256": "09a5ffff2f750d7f9f1de2d48e9431ec1113838f29d76672ed8176392bf7a580"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_011.png",
+      "sha256": "bdcbbf4b389a0e71e9f96fe4f201bd049398bca3cf0e90321ab2d2375b909efb"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_012.png",
+      "sha256": "ee11c3988cf1129c9eec1f020b4d1c7c5ea9be7f5c4932a5dd09e96ed4ca4767"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_013.png",
+      "sha256": "19e58b00d9e3af49f4ea0182b5907740ba5ad88645e56bdb43abbb526909346f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_014.png",
+      "sha256": "526696adb2d4db2951660fa1fa8d573a3979efa160f2a4c68e0f23db4b5f0058"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_015.png",
+      "sha256": "9aa6329765a965b7c443390c984566575f4f35494966b69c2adc909d882a7ca5"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_016.png",
+      "sha256": "3d233e10a12af839c63b274658e3ece94ff18fb9ab2dfc820105b1a2eb19efd2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_017.png",
+      "sha256": "3a9212e01ec61ab7f756a878e6f00688ba65567b58f069dc37799c0311890fd7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_018.png",
+      "sha256": "3b71576eb0b24504613be7c5f9846d20efedc94167d5af88a388527fc0b1bd5d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Imagism/The_Red_Wheelbarrow/sample_019.png",
+      "sha256": "df7b59ff3394334760d13afca40a5dc40a90e0daa58c572dcf50810277f8b889"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_000.png",
+      "sha256": "0720323947b4e4caaa520b642822a30250015c8ed7b4b43fc0d68089f753e7a6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_001.png",
+      "sha256": "f9f8b91a70eed9a46ab3f106175cc2ac848431bec4b51541f3d65303c43c9b4a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_002.png",
+      "sha256": "7b356deae9116f9e1bd88ee61b29c71e5dc748308a55716f003347db0e27380e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_003.png",
+      "sha256": "2c9accbbbd8f1bcb994215b409ece6256abb70f12ca5ad8c154a8f99212f391f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_004.png",
+      "sha256": "35b3a873fad2a4fc460ae58ff8f51892b54426978db2c035ccdd4807fee26c25"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_005.png",
+      "sha256": "03dbe800932d48d681321928a10da8ff45b9327d3af5c671975affa665c7d85d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_006.png",
+      "sha256": "7e681ebef348b1bd2887d36d789d74805d922a9b1257c9821a8ea8307c702070"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_007.png",
+      "sha256": "e975a32c09a7a961f80f98296d1e640bf6ca78fc19d33bb15f9b3925c9f6f3d6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_008.png",
+      "sha256": "2bbd1869cd771579f529bb3638b5888bee83d2cf60ee85f529421154eb703685"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_009.png",
+      "sha256": "624e406f7d3b6c9edb65a5e09c5ab7d50816c8c661f93b1dd44cd9ed80c1423d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_010.png",
+      "sha256": "4b080c03907ecc6f901c1402ba8dda46fe6c6b87a07b679340c23812177f2f20"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_011.png",
+      "sha256": "a9f3378a05d5d38ce5b4c9dfe9d7f95dc479c635747086503cf5d5f515f6fb5f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_012.png",
+      "sha256": "b6a808a1c00b8a59a46fb7162ba3012802436c35dd4570054920ca2dc6394d58"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_013.png",
+      "sha256": "790c32fd8d2b9e62e9e40ae782cd17a8eed90fe23e1a5deb85ee7a58f8f9abca"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_014.png",
+      "sha256": "280a319fdc6e03d3213886fc12516512a18fca127a86076add0a48428f6de8b6"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_015.png",
+      "sha256": "6bf0f3525945646d1d0414e12e725b6dbac7da52996794c4b739a39417a81c2a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_016.png",
+      "sha256": "afe79946aa55a1074f90b7f2161ff6339a4c3ad888236fca2cefa4e8c4cdae4a"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_017.png",
+      "sha256": "e793291cc08117d87db40edd482208ece8da154813bbad59d6b51400d4b2e054"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_018.png",
+      "sha256": "c12d171d08a307c91b7441eb08b5c0a14505a60c93bec84b450fb8863d123888"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_019.png",
+      "sha256": "7d72cbd2ef8b08433211aeeeb9ff7a5cf7be5592d70f2c9f0255700743561dbc"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_000.png",
+      "sha256": "69cb657d8e5f7be5d43c660fdf20c5323c89d7f2a9638253289ede68ef134486"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_001.png",
+      "sha256": "ab7fabfef4ec0af553b19afe510e1da8bf488a1e3e2feedb50a338023b55fb37"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_002.png",
+      "sha256": "973480b2a616ba69206e6fee161fb6a82fd1fc945e905a49e0dd7770cae5bb43"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_003.png",
+      "sha256": "424105865b52295a9b0b42f03e07c4504ba37ce22ba2b8d00c3d20bd230286a4"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_004.png",
+      "sha256": "0c084e95146ad4cd92d6e7f34f4f55eefc204470fd658af03530cd8208c689b1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_005.png",
+      "sha256": "e94f029e8291457223b1e79c5a29d57b6f9e83a185d1e835d01373f2b619af95"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_006.png",
+      "sha256": "9d04b809b83ed94e8376dbb5ce58e19cc072a7e0e4482c46d45ba1f51b9b06e1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_007.png",
+      "sha256": "f045774443f678413430d77270733bc2a4fc38f7ebed063223fb09ec6dbd354e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_008.png",
+      "sha256": "58a1860d093a8fd5ac401e2df1f48d29e5a684bb0b116d46af37899a24253c6c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_009.png",
+      "sha256": "59b8483d573555862536538adf489736e64db60fecd7e7f1ad8d32d8d7b3e946"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_010.png",
+      "sha256": "dcd47b8b11a06846fc3caf710e9a4f6787b4ca7fea94fa9c726515c738af4d17"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_011.png",
+      "sha256": "9a36b95e9c64c1655652b519a9497fcb08db3743435fa47d3a062064388edb3f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_012.png",
+      "sha256": "901be9ee284a3ea94b30a699448c8cff338e0d4791434c99fe9bbfe260b3385c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_013.png",
+      "sha256": "6d92d72af299545dafce75427f498294f4bdbd1bdc76da46f08a61ba93b81ffd"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_014.png",
+      "sha256": "5d13a39c11fd9a3a51c28f85fbc2d73d46ef08477c1f74f7d2a4eaeace085d57"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_015.png",
+      "sha256": "4a0a566b8995837473e7e1d37b0db1d3aef1f338f1bef9290c467f17940c8771"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_016.png",
+      "sha256": "f51315abc6eb98b6f529f73d4becc9abdf252a27aae116266d8f46852cb4106d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_017.png",
+      "sha256": "5d2cff02cc6c82283b9d4b72c708de3ff77cb569869e5cfeb2f482b063a94719"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_018.png",
+      "sha256": "19af4fbf90b108251f1a3b003a52cedd5d6d7a3349452ccfa7b481761bfdd3f7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_019.png",
+      "sha256": "8fe1977ee99f8ff79c8992f9f1c3c21f738981645ed8f4bc102902310472d799"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_000.png",
+      "sha256": "a86115fa805436250cec12602a601c412ec83b0ecd089fc3dfb7023de407e3b1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_001.png",
+      "sha256": "3d7758b062904bd1b078d303642d4dfcabd29bd5d4bd280bf3b9eecbc8a22b87"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_002.png",
+      "sha256": "cc269e30bae987eb67198bae2dbfb879727525c6c35e52880f45d050a809fb89"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_003.png",
+      "sha256": "572c756799ff253a73ac608d323377b75c37b3e1fc45541d05d0ba6415245a36"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_004.png",
+      "sha256": "d0c1c5453baeb97d9082fd3ca2c4120cfd3fc340076575bfe69a443ef854a4a2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_005.png",
+      "sha256": "73c7e6598dd5e49dae2bc3fbd9dea2624ff209060183c96008d0c054519d29de"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_006.png",
+      "sha256": "7c1bb7b89c0986636ab4744fa23f1e7db97d2bda156bd78d0896dbae0d1707fd"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_007.png",
+      "sha256": "d7d8523ca6bb5afa3c860e72ea653d0d5c1a62a75f615d3f0c750d101b7d939c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_008.png",
+      "sha256": "cd2d27ff757d0a98ba108d9570bf609f516f4bb40b747a14dcdec1974adc5700"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_009.png",
+      "sha256": "75257d07fbc5d51f894de38d3c9830ced8968a8544b76ce1b990497527f7dc9c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_010.png",
+      "sha256": "ba3b4d7dac6097d710237fdcf1022f0c28a163a4ed311e9685fb4cc7821403ec"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_011.png",
+      "sha256": "ebee205fdfb5b9e4b0a906769c7d0ccd8c612d82388aa6f7c0fed559a9001bc2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_012.png",
+      "sha256": "ce2541ce77e20afc6a555a5016c9db63622a62c79ae1af1f30f507f1df60a73d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_013.png",
+      "sha256": "a570b2504b6af5b03c8fa0426e07aa63e958e58a31292fa097daed9be0a58f14"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_014.png",
+      "sha256": "33258a09d7ade3210ee3a79b404e6809210ba6f0eed804d3f614e7143dca3b5d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_015.png",
+      "sha256": "6eecde60bdfde8d3723c32a4321dbad8e21df4a301fdb357dc9c9d47d09fa723"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_016.png",
+      "sha256": "a75575a1d2992a12497d995a0b0a6c39cff71b2a8cfe09940deaf1fecc428f52"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_017.png",
+      "sha256": "da359cc24404ecbc9e9dbf1b95f614b351925fc2c23b711decd995675b82ab66"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_018.png",
+      "sha256": "6de46da47eba6f803c569f5c22a46a62acb72a1d53011ccb28022ed275162ae5"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/She_Walks_in_Beauty/sample_019.png",
+      "sha256": "48d850c9f30384ca3b990dc78f993351161e6c43ad14120f0ccbe6cf21004d28"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_000.png",
+      "sha256": "9e508b2cc3e3c311170dd29bcd3fba325c662d8c7c1599b402095d155e592b36"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_001.png",
+      "sha256": "c7b3c25b8ccc131d93a52176bfddc689c0bbb24c1c18ce23e7bd15c04befc316"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_002.png",
+      "sha256": "285950e148ea00d56d0c22e20e7b5ef070ea3d586e06f4a8b3069ef87059a67f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_003.png",
+      "sha256": "8c453aafb52981a11965f05594f1681f2d68d72b157a99910ca7732029f9435d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_004.png",
+      "sha256": "54dcd862f2712c1351911e2c723a666e2c20dbe965a47c18e5e446128c062056"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_005.png",
+      "sha256": "b4fb6b889790c0616028822eea7f949b67ac42a2580e3369c7b5f62b3d7c381f"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_006.png",
+      "sha256": "13fa821dd7e6d8aa924394d81f8f89d331a68ca43740f2bf61206e35bf5ef666"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_007.png",
+      "sha256": "e8e61095c0f88267a69cfe59a1d5f30f9b7a989d2caffaea609d66033bf232da"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_008.png",
+      "sha256": "00a8a528da7da7c6b126503280016d70e14bfe1d4a7d490a327fdd42a4e27280"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_009.png",
+      "sha256": "0cd80f17020088285ae1bbe882c9f513dc8147f04042bc81dde160f428de3212"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_010.png",
+      "sha256": "78720c2a69e04d9d9668bc3cb7d5103bacdaba32449655dfc7c1614a745b0127"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_011.png",
+      "sha256": "6d9c11cb2bff102bf30df2c03c6a045867dd9e8f03de774c54686cbc4210de70"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_012.png",
+      "sha256": "db97559ba9c1dc0465e2597fbac031481ae6c300410792a6b33b5d500fdd22d0"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_013.png",
+      "sha256": "202fc1111fdced81a3a9ade186ca32f6c7542d3e2cc83a0332591b9734637eb1"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_014.png",
+      "sha256": "d3b95e86f3fbbfddb538781dd9ca4c5e0a907090468624f33b9dc50614af646c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_015.png",
+      "sha256": "974537cd6135d09cb1eab064b0081553cbb6e662a1dbcc9e7cefeb7390ba11d7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_016.png",
+      "sha256": "053f80be588e83e6e3f5d3997faafee5c59ab55c5624475a89f028f3972f5a11"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_017.png",
+      "sha256": "24395eed4bb7da02f949221739bc59b55ec8d2d1ebaaf25e026a9e0641427f5c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_018.png",
+      "sha256": "a4cbe360c1f7ff73cdb380bb02c689fabd6d65b17fc2b7b3c670ebfd237194e2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/The_Tyger/sample_019.png",
+      "sha256": "574aef326782ec24e6cc68c7d184cf6b153b01bae9db6ba61a727892d98cec6e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_000.png",
+      "sha256": "4746ae20bf2bb0c8218f00f974b18744615f41fd67138148841ed10b37b539dd"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_001.png",
+      "sha256": "032a0bc0a38564e6350d70c972c7dc5e03af057c890f32ba481b02bce2a9fee7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_002.png",
+      "sha256": "c869f906729eb48335680082b96a8f85ce0e54ba13d3bbae9552fb617977bbf8"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_003.png",
+      "sha256": "8a456fa8cda24439d6c7a94e5b114035d3b831d8fcca293f4eb82cbdd66e6d58"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_004.png",
+      "sha256": "75db2c0315d36afcfe659c5a9408de11bf61ce5f44d5ad0eda16b6bbdc296cc7"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_005.png",
+      "sha256": "f992e175ccd9ece16d9980d0ed79aa1ccd1e66cad6d2f9f39f12728e1c2aef48"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_006.png",
+      "sha256": "c0a92db24aebc84dfa9411364b7145c0ce69b6aad2c8b5400dc0577be4be8b87"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_007.png",
+      "sha256": "761f745f9ce917e2943487fe54b4851a795d452277c04ceb7665468cf4d3aea0"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_008.png",
+      "sha256": "fd40679adc1522ce3ee8a41de588ae547738ba543804ecba1d1ecbc6fd14502d"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_009.png",
+      "sha256": "b7199a09aa427fd3786cfec270a32975f275773abaf0dd5731a13782f1de5e68"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_010.png",
+      "sha256": "b09b48a1dd25a23ada16d1f47d4945f7c39f4bb007d9234ef6351a3fed206fae"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_011.png",
+      "sha256": "861ac08eadaeb17da0e6348b56b7c91c68464e1f5bfb4f9f72cfbbfba7763553"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_012.png",
+      "sha256": "74c1ecdb29ed2ff47d2b9e592aa0644accb3e7d76791fdf6866e68103c21f502"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_013.png",
+      "sha256": "ddbe6225749f5cc755aa005c8dc4764e00e5c8ef9b2ca00b3bcdff0a5b5eb8dc"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_014.png",
+      "sha256": "9a3c3a2b099c14cc071ecc703e7e1bb68ea819d964b3d591ce48ad6744a9605c"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_015.png",
+      "sha256": "9d2bd2b215902d8969b5914e37b14b63a5316f3ceaf64d3dc6458549f8888aa2"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_016.png",
+      "sha256": "056cf2f4cabb1819ec2e790ac601fc8f966aeecdec5ed019a2b988bec282aaf3"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_017.png",
+      "sha256": "f4c31b955efea7cbb85829ea3c80b7c8805e3c0318cb4ff001c03f2da20b82ef"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_018.png",
+      "sha256": "31acdb9466aedb69cd7257ef065051f5ecefcd605464bb769e5512f4d963433e"
+    },
+    {
+      "model_label": "flux",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3/Images/Romanticism/To_a_Skylark/sample_019.png",
+      "sha256": "80588338bedf7d4478afd82d6fa128a4fd4995583e2675052622931405d97163"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_000.png",
+      "sha256": "30ff0c39e655350098aa19c2fc944ad31bbe872d22b856da4c969a36f54954c8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_001.png",
+      "sha256": "88496178bbdeec6eaa6c5bb88954dca974e8bf00c247a2415bd5c4f1f3a28b30"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_002.png",
+      "sha256": "644359235ca87e716f0d5074b252a136baf20bc84834585b889bb25efc9e936d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_003.png",
+      "sha256": "ba9812ce78413ebe066a3a6eff95133b6b8c09a96d541839e87f871bb5c11785"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_004.png",
+      "sha256": "f73cafed212b45bf57819b2b557ef96d5e89bcab14868ff22b141fd82a8b5228"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_005.png",
+      "sha256": "4e3c7dd9ed522d22de5152fbbab4c1fe6f50a2d09f2deb88461dba2bcc4693b7"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_006.png",
+      "sha256": "c1e09578ad1c5b242a5be31d4b686d4787467a96a699d0cb05cc41f28c57ebae"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_007.png",
+      "sha256": "429b51bbe96f49a4507afc5173e3f0d90f2840a9bf09583a92752c5212af3bcb"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_008.png",
+      "sha256": "094496157b80c28ac95cd97c0ff72936372c7dae99a401fe6df85e3a409ead59"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_009.png",
+      "sha256": "3b112c156a27daa06298e6e8479e6499ddd94bff07191694052a7d128d7f39ba"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_010.png",
+      "sha256": "6445ae02be345edeae6c283b9e158266ac187bca91cac781c56ac68392a5496e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_011.png",
+      "sha256": "7dfbac60bc38c25c5d419804cc79cf3aa035f3c9d04cf87c2b034578e651482b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_012.png",
+      "sha256": "e172ebde35966fcd711fd1706cec85c49fff686b19423ceff636b3e6189df491"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_013.png",
+      "sha256": "713fb7b2721bd4b737ab220d0cf26ca061539109cf4ef2c11af00206d5ea9084"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_014.png",
+      "sha256": "d1a7c8e018cbded0824bb2ae042b4bb6adfbbc838802ba11497154ebdd0e48f5"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_015.png",
+      "sha256": "f76f55e62b51346fcc6c22c5d853c6a6e6d76d0ca3909f34114f3ae9a7996d2e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_016.png",
+      "sha256": "4de91a9c76f4f2c982faecb6df41e9b6d88ee50c866b5f941bb02e635a762144"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_017.png",
+      "sha256": "6af144b9e74cd919ae94eb8444c3815c1eb6bb51e47476fb3f93876209ee46b9"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_018.png",
+      "sha256": "26f5f3bf9a70d0ac22a141f2abf9678d1e8cd11f5aff58c8d648656c870f2ec8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Autumn/sample_019.png",
+      "sha256": "f48808533d319d4a54a1dc6c3ecf15ccae8ac700fe447e427a28e91d379acd06"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_000.png",
+      "sha256": "24285e52e9bf2c932c7fc9f92958902378aff5c884a5361ad3d0e3d6361a468e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_001.png",
+      "sha256": "cffbff328f32ab34b15b7eec5854c17d7ae9021e1cd8dc779fe821803cf90516"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_002.png",
+      "sha256": "2570b40be4fa4f0667e91a95a0c0ff2e9f2c72ab7c08e0d942051d183f12d6d4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_003.png",
+      "sha256": "7f5893ce1a7cd2da0a6c99f3e2fdbe42d43ebf017663e97fb59789e2b5cd2921"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_004.png",
+      "sha256": "128475f1d1b772cabd3e2e9b9cecb03f62b544c79e6c4da02cca4d370546220b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_005.png",
+      "sha256": "13867689bcdbbad47aa3015ca2f9dac048b9b9066d14f191018dbb9bd0a562ed"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_006.png",
+      "sha256": "393e4a1febfd9ec1a8859dfb4c09b3175d2273105f55274c8a330219dbaf6e1e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_007.png",
+      "sha256": "6f22739fe35c345ac44b94bf6ef88b43ec59533c20372fb242e2214ae7d9a9c6"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_008.png",
+      "sha256": "a4d2fa70ba17be12b2b2d873122421c26ea12478f80b6bfab3c56524f5106e0d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_009.png",
+      "sha256": "b2d4ec4cc549ce94bfde9dec64b90ba81bea4d658675d407f24e6471c7bd5d0e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_010.png",
+      "sha256": "2904d3635d50cad75cdb5b92589c1108b0b1e3e8e3d6ae9bef3dc0584da792ca"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_011.png",
+      "sha256": "b9479073e15b7d68314c481ae131d23a985e45ce6e033e711621c1ecafbf7e73"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_012.png",
+      "sha256": "ade492f04501d0eb196d1ece8a492ff2421e18477ce42bbf94998833e802d06d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_013.png",
+      "sha256": "569d32238677620a31ef209fefcc4c0b8bda32e7e92f54884efb900208fc5f5a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_014.png",
+      "sha256": "6beab327be593247bfc4d7aa13dde1c832869f5af6bd4f654e6dfab9161b5b82"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_015.png",
+      "sha256": "316342a6a384084b5404c4bfa59f0a920df97c2c17aad3cd3014f572d32f18e3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_016.png",
+      "sha256": "8668a1f972defbcfffd7bd07aea4958ff6748fd2b6af29371cdb8d19dae479ac"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_017.png",
+      "sha256": "f982087a57f11651327cc9f5ca0b8b1f65a97d9fa0880c60d7f10726bf6e6584"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_018.png",
+      "sha256": "361b0896b7fdc5c9be7af135f74687c83e55bd6d33531d4f50523fd9b3e4b67d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/Round_Pond/sample_019.png",
+      "sha256": "a887dd60bd3205c4d25031bf0c4d4193e37d18a413531ccf9e700ec8948d7c26"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_000.png",
+      "sha256": "fb504696cf5a49c5b4c6c964d8e18d66d7169ff09a8799127fa000fd63e5ba50"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_001.png",
+      "sha256": "4d9d76ed98e7ef581afe1d992f7693ac7fa32c8ad1d25b911d7d8d80d9af98c6"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_002.png",
+      "sha256": "0efb9ced40de021eaef69ad02a7832b43c9422a3db9fe6f271b08c9ea782a760"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_003.png",
+      "sha256": "82d984b654c541a242540454045ec91c83f13cc341c51b3ea12ea95ac28937cd"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_004.png",
+      "sha256": "498d64ef11345a83dadf78d2ce0327bc192d716055cd30d41e2193c2de0b65cc"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_005.png",
+      "sha256": "d940fc8e178e4b4ce8a1c670f06fdfca5ea4491d00fdb5405c9c5c32f8904368"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_006.png",
+      "sha256": "a8caf5263cdf8aeb052757c8a334e5918ba49b1ffef179d3d8d1eef3ece61eb3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_007.png",
+      "sha256": "f36ae54054b2857a60cecd60c2665c1c00440a1f9d2beb1b116a3b266f945c0a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_008.png",
+      "sha256": "9a39a3a240f0489c319602344bb5c4c9ee7a79955fe01244ef3a52f59acd27f8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_009.png",
+      "sha256": "8d3ca757a9adc131509c927f85ac3af5103d63b682b25a56c7ff9afe529e5e94"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_010.png",
+      "sha256": "219d65257b8ef694055c1efa409c969b9b2f0d0d8d994fca85496ffbbaafc5d7"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_011.png",
+      "sha256": "ed0a8da93821689c33bc3e9563864b52ed0a3af47e1913486d43344e4f66456b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_012.png",
+      "sha256": "4c1d9a733a4ba67189bde3f185b61dd7779821e20d91c66dd9ce8ffb291afe67"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_013.png",
+      "sha256": "8f2ede71d43ebf0c0889043d555b210d3150af572c502894e3433936d75415a3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_014.png",
+      "sha256": "0932d946e9264e99cf853e3f8513cc9fc2898b115923c934e65b2a9312df3f50"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_015.png",
+      "sha256": "6c31a7d0e7b479102754d22ae4fbe1a718255c5bac8938be0c2a7df0ac231ed1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_016.png",
+      "sha256": "30294d19af210d8a1e16b3e24a097aea558578a36ccbcab9dddbe287897a8ac9"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_017.png",
+      "sha256": "d0167f531d9b62b923c004a9ab7707cb7240cd35f70c316be731b979975f8fd1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_018.png",
+      "sha256": "4bf9a3dc372b855eb648056c8026aad31dfe91700ced393d9f93876e9020ed89"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_City/sample_019.png",
+      "sha256": "f5848a5a0db6157b6100b9f5dad46ed8da719b06388a4ec93929621bf814578e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_000.png",
+      "sha256": "57b2b02dfde06ee3283fa9b11d4fd320312b4a8b6c4a257f7203edf48177adc0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_001.png",
+      "sha256": "85f1a61066ae215e7ff7404413069edb0396ded09cf45883b7da1b14a917dc61"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_002.png",
+      "sha256": "1f4bc7a5c3cb7278395246fc0458f7e861461a5594a2656888feed8d8a653a7c"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_003.png",
+      "sha256": "3f794b3cc537aaf0610d9d3da8edc899b0018f5d45dff155092f8b42bcc21cd5"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_004.png",
+      "sha256": "4ab596200d68e658b52034ff19deef5541b05162010287e037aac5366883d053"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_005.png",
+      "sha256": "b3c289830e9344447fbe7811fe280c75a84a9140a86f8f9f41ef94c9e9470c71"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_006.png",
+      "sha256": "e5eb7465336c09943fed163cdc22965fafcf1de80f9b9a1d6b5b774514696791"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_007.png",
+      "sha256": "721aeccc91c73aa01c6fa170cb34c84a4485bdce1e78620492226f305c8fc92b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_008.png",
+      "sha256": "79a3f64ca9c418744c25409299c139557c565c10a0038e045ddb46dd6b3257fb"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_009.png",
+      "sha256": "6d4de97b6d41d8026762f9c126cdeaa2af1014883083dceed112315474a44b85"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_010.png",
+      "sha256": "6ac17c32c3d48bc38288585c14f4a869fa1c3faf16b1e37f2016ed5aed0b7ad3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_011.png",
+      "sha256": "2e7080984c002cec2567abdb84181eec80ba06315ec8d7f19b091f70861c7228"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_012.png",
+      "sha256": "e487992a658aa0704923ab92e441bcf930d7ed863cdbf4e3b76f64f1afdd9520"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_013.png",
+      "sha256": "789491bd5b66a1747e566105afd0ed2ca3dddb0c900d05401eb37f2d53d28be8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_014.png",
+      "sha256": "3e565e490589387d5677ef0283598cb0560b61273f875139dde0b6ec88f38af2"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_015.png",
+      "sha256": "6b66f5ed295edc3b483e255e1b4daec349bd552f91a71157c3eac54f776237ca"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_016.png",
+      "sha256": "418f786eb6250dc753232083b8ca789438af05c4727bec469dcc59ab1fcf5f35"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_017.png",
+      "sha256": "9e25432f0b5f6762084b4e5071a57d388c61bce4f99181e1cd4c27f8525697ab"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_018.png",
+      "sha256": "d1acb31ab66c465abdbe684feed743c76b555fd7551137f053a8f99c9a26904f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Great_Figure/sample_019.png",
+      "sha256": "fe804d689939719d39b428c3417d0f21a8de32ba59ae15e9c9bfe3d46f236059"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_000.png",
+      "sha256": "4f0b10a1781ba72572b057c242e725cdcd2ca704d295770672566ff1b4ab529d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_001.png",
+      "sha256": "eaec794859a9a60ac82301bd76037fc4fb00c13b1c10a151414076e801055258"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_002.png",
+      "sha256": "cafc9c3b94886c51af11c7b93334632e751b3472a20411b3d54ba30fe8f9000f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_003.png",
+      "sha256": "6f862e9774a4349306a5e6141f6d1eb3f83d7f1110c7b88b8bd50bf6ecf9c897"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_004.png",
+      "sha256": "7ff85971b84a4c629f80989726c2cdc47c530b2e18f1b6ec49b464f242e2458a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_005.png",
+      "sha256": "489c7bb45a98b513e4cbb4dcada1a13dbd49764306ec1e2be71c162bb9a4184c"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_006.png",
+      "sha256": "d6a06863190e52b4592740c2119ff3f9f0ed755950f3443c488e2c12a9973da4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_007.png",
+      "sha256": "c2516131f4588fc207511f19a0793da5cb4695a4cba5c5ae2f0f890000e6cdf2"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_008.png",
+      "sha256": "21e08c198591db5c9a0e1cd20e4ad13c42de939ff0a9ef5d2ccf99a1336920b2"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_009.png",
+      "sha256": "539b6c0da3258f55fb92a2f881e3ec65d99c2af2e807cb0d2d49686b70485dd0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_010.png",
+      "sha256": "c8b93a4bb5b2b2a0afc6356d1067b96616e4b546e1dcf7c3ea878a42ae1b5923"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_011.png",
+      "sha256": "3c25092491a9144dfc388b7ee7ba7f98d617f0451b627cc4ff32fa97372aba0d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_012.png",
+      "sha256": "6f389e67ec3ed0795a06e6be2e4dae8fe216d6d98b4b11a13da9174b7edc6eed"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_013.png",
+      "sha256": "7011161494f62f19807d7068ff53377b3e21594becf2588b929707c4fb46b9b4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_014.png",
+      "sha256": "3994856859acea405d2e57e7b4c399475b170621552e6918ebe8ef861e991c98"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_015.png",
+      "sha256": "6da1fae36b47d2b6a9839eecdbc65ffce1bf2119992b0c55cf83ed5f365bf925"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_016.png",
+      "sha256": "2dc46ebf24ec6a2359000a35be619eec02cf310fc03c5e1c4c3abb18c7577bf6"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_017.png",
+      "sha256": "545c81f8f6b304cfd16d45a9812ed70380d1384303946e9143fbc241d8bb6c3a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_018.png",
+      "sha256": "88667a8347aa0d2f84400b25011991877ff6a08ff2bda74d2ac1476d205247f1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Imagism/The_Red_Wheelbarrow/sample_019.png",
+      "sha256": "c1d87072966f1bfb78d038a25f3a78ad1dff87fd73fe83cbef847308c5f143c1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_000.png",
+      "sha256": "9efd14d14087162c695faa6765304dea3f5a2063e96ddf171124887e71d28f39"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_001.png",
+      "sha256": "ac898e9fc85297069c4d7836ba6b9d2e4a71a33b7ffd233838ba070c2553f255"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_002.png",
+      "sha256": "9a3f3259bd6dde4f337ae8a1a8a5aaf8d44126ab7adb7b80764bd2599e5ecb6d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_003.png",
+      "sha256": "b77389e16642b3cb486d18e7a5f5a8a41f0a2f3aa057644203da8de16be0a01b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_004.png",
+      "sha256": "f8dc51cfa3f3a1131f8efc7b93523fa8a24404ba0d3cebf726d7489e31b604a4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_005.png",
+      "sha256": "c54947c80d767d9673d5e9ad12edea82830c344fbdf40479e5ff3f04e46b12b5"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_006.png",
+      "sha256": "4af1f5de94116324705bfbdec11505b8f01b3ce7c3a18657ba83c2491eb45ee3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_007.png",
+      "sha256": "31c26d8181a5d8d057c60a3a4b4111fa9cabfb1074fc15d21899359f398c4515"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_008.png",
+      "sha256": "12ab887c97d68a68180b0964144e61d4fd0eaf7a425a09165a864a73e65ecf23"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_009.png",
+      "sha256": "fbbf9fdf44c2bfa97bca32eeb71b4bbc72cb830ca8f38358a37e402d85a2b1e8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_010.png",
+      "sha256": "9b521282b6d67e956e49a5c7db49124afa29c2d4d4b89252cfff83559d75ecae"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_011.png",
+      "sha256": "26ac5fc1d8ff55aba838aeaa55ac53c52527c3fd2c16251b053a0616bafae12c"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_012.png",
+      "sha256": "ea79add549513b2beea11cdef52d0bbead93dbd8080fb7216388fbd9ab2a1a53"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_013.png",
+      "sha256": "8ac91be1319627ea4a00fff1e9e734fa4910b5663336e80d7d013880f59b0575"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_014.png",
+      "sha256": "f3c47f8a1167769283f8cfb9b4fc19c2033687ddf6a42277cf2f712456b64192"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_015.png",
+      "sha256": "ca0d67c8e95f0c36da387ff65df2d5e3533f2c4ac5854434ff38c62a852c7c53"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_016.png",
+      "sha256": "06ca8c3b795f6d4370f43487d314546762d3c6f8ae9534ef0f1bf597f989b850"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_017.png",
+      "sha256": "69e29385f1c307b0c81232030c2a14ac9941eb0096b25e14790517a6d2f6b3c3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_018.png",
+      "sha256": "a7ce966a62bb176a826251a7b7cfe431eb30e1116ae1ec925f0cd13f6aa162e9"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/I_Wandered_Lonely_as_a_Cloud/sample_019.png",
+      "sha256": "5ac6abcbb5eee38dc2f2e5158fb40948127b939b06a15d2572a6d5386c546a1f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_000.png",
+      "sha256": "b84576bc5b68d067ca15d986f5811d947e1a7b8c639afdc24b6ded9dabbf9551"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_001.png",
+      "sha256": "c35df7484595e0788ab16e714e976f376fd378f6ef7832af25e7ace140e6a094"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_002.png",
+      "sha256": "7057de7f5d2240597165f218be291658820168eabe31419d0791535354f62935"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_003.png",
+      "sha256": "cbb73ded8ac8e6228e01b4893f99e7d5d1cd1e79491e4cb8c3629e80e4d1b731"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_004.png",
+      "sha256": "a777ae0441778d0ff88c071fce0093d014adf413b22e23cfa7afdc9bbc2bc3d7"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_005.png",
+      "sha256": "e7b368d5a0c5c87e733f69397d806e7650846289c5f44b687d8fdf0fb9da8e51"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_006.png",
+      "sha256": "b8588432ebddff77ea17b2e174473f8127cfcd156c0dbdb05125853599b16496"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_007.png",
+      "sha256": "a22961d38ac04873dbd3bf862d4d6b378e7c99236dbb178211c4bbccfc6302c3"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_008.png",
+      "sha256": "f037eec061b8be4481e960c29be1c36c9048c35402a38394f5bff5abf1680427"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_009.png",
+      "sha256": "c11384fedd75620763ac518bb8f5de50780e30907c99ae63f8b1fe5e837598be"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_010.png",
+      "sha256": "a642cdc454e515fa1ea6ebbb44aebba6ffffb68cf7074b9e61021817e403c372"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_011.png",
+      "sha256": "5b3b8f063c6bb9be1c75f4faa7697eedae97ff247e6ce44b77719368d52af2cc"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_012.png",
+      "sha256": "1d32129053a5d04d77853b812eb3d7153259cc545539b6e9fedae87bd624a83a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_013.png",
+      "sha256": "8e7f5aae20e401f1a4f1a5b526f8ddcb7fe1f99952355464b33aeeee31a79d23"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_014.png",
+      "sha256": "1e8dc553b3a8a1624794756e14b5b49119d744a158f91b0edbdd5e171b0f44bf"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_015.png",
+      "sha256": "0aec44d58e90775088b97058e1f17fe25a2d18ef9db1676d1896f5ec0e0eb11a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_016.png",
+      "sha256": "d6ccdeed9fa69c7ced84f4c3029ccb5cb1a6c7702f024c471a1954d11bb6ac4f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_017.png",
+      "sha256": "eeb6c9174a6274c6aacf08d6c8a05a64eb0456f2ac5a9485401dbd6ee4046d24"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_018.png",
+      "sha256": "8c4c4448540cfb782c45534b29ab2b644c57189edb8aff0d6885fc3d4d1d6724"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/Ode_on_a_Grecian_Urn/sample_019.png",
+      "sha256": "735b03d44a21e9f6052d14b40d64a11b5763374207853be2c4a64a8ab02226cf"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_000.png",
+      "sha256": "b059dee695c75c5ac2f16ba1de3c8cef3e3179cd8c7f55b8f0b05ca45f1bcf5d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_001.png",
+      "sha256": "d615310530c98dabe0c650d359912e9c8852e2f1430c6a4ddf935e02ca839438"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_002.png",
+      "sha256": "8ce98d880c8ba93d54105b66fd2b4aa9d2336d895ead669798c948da88c4603e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_003.png",
+      "sha256": "dd902fdead9a62b377a4ed99f3051fdb6768621767d253a03a4121165ad8bcb0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_004.png",
+      "sha256": "c266d3c620af1cd5ba1d78489c23820b35640f47fc182bf50bbedb1432b87469"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_005.png",
+      "sha256": "7957308f2a5a1685877672b01a6393413bfd1a5c3c9e07261dbdbc9216ed54e4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_006.png",
+      "sha256": "757cb8fa043129e0c10604cab4976a942ebb6ae5c9baa5fa223a7b6e69a7e74a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_007.png",
+      "sha256": "2dfc8cc55fe0213ed3d135872797448a28b55ae714628ed6593a33a279b2ade8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_008.png",
+      "sha256": "87e2c7070eac8cd30ed70de707446bc99d6039a067f50a46265d30f6352f98e4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_009.png",
+      "sha256": "d3794fc4b3fd3e2c39f7bd17dbc162631aa062a3ad5058bcb3f5e3963dc9e207"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_010.png",
+      "sha256": "f6bbc12cfc71a31bda7479ed93f42f94d183cbf4bb742de5cad8e78812976d0e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_011.png",
+      "sha256": "7c355c005c2b861b934429d80638a051625a9b6b36dd7a0cd47a02d23a189cb5"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_012.png",
+      "sha256": "ef51c5bcbd488a9589cf0c7c16a645aa98525fb1306f88c40baa9009cf7f849e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_013.png",
+      "sha256": "f128123a56d279b8a9a8c0edb7f2e2d90e94b4a5d4805262932affb1192c4f72"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_014.png",
+      "sha256": "02299cf493ad56a79d8af6d74df17621dc2089b1b5301a4a3c7700e9dafb7da8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_015.png",
+      "sha256": "a23e2c1d4829262cbe2883d80d27318ab9c8af0eb959e21ef504a9bda78e5ff2"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_016.png",
+      "sha256": "54905467f2edabf6ecc5578940a611c0f7b5e848cd77f341f1b8baa2f8d56b64"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_017.png",
+      "sha256": "dfb2c0d53b4f16f9c645ce15791f7cc36f15a770896086be4eb9bbb1c487a1ff"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_018.png",
+      "sha256": "3eb4d076b1692ea1e6996e91cb8a930034138e285c97650d683c0055f37749e4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/She_Walks_in_Beauty/sample_019.png",
+      "sha256": "f747526abebf2ccac3c5210ae0db26e4cc2dc2dccff830bddeca6cd34c8e1e31"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_000.png",
+      "sha256": "9ee62bd5e589d973af9ad61f649467a08c1022e2f6449875ce4b14e5eb721766"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_001.png",
+      "sha256": "23c0f3c47934167097630da677f42efe8ba11756ef0124a019656126ed6652a1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_002.png",
+      "sha256": "8e5618a88b04c5ed7eca1a11e9f270c9fcd6f9e2085c842c85a594547aa000d8"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_003.png",
+      "sha256": "846182df8985fa81f30a456e3801829fc65068b76ba5d41432669d105deb95b0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_004.png",
+      "sha256": "60e2171d812d21f4af6644504138d1592ab0945e9315464d9c9a112e14bcbced"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_005.png",
+      "sha256": "0da2c650420f549a4ba374711cc6a1fa0e311af92835bd7db61745709a13b06d"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_006.png",
+      "sha256": "22e700d09a734ec5fea9acb2f9c18730583185354ff911795b66f94783252b97"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_007.png",
+      "sha256": "db3e78f5277c0884183985f56393bf3419e836339b37664218b13fd8f3f8cd6f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_008.png",
+      "sha256": "c03b911c6201c8bf00671194e00e629b288efd2e0fd30832203b4081a1cec475"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_009.png",
+      "sha256": "db2cf081acb569364e3d520b6a58bdc36fa3db80227499f7440e86dcb001ffd7"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_010.png",
+      "sha256": "5697db316e2abde33cb18109902fea76322998aa45b8eb4ef17797d5a7fd5c2c"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_011.png",
+      "sha256": "3387aa91eddc3e6c4b77adb3a413cd72d6e1b1d0a5029f449229cd7325a33de6"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_012.png",
+      "sha256": "4d76a6c77058c4d6aadfc8b17ecbe602d8a53ac0e28eab662ffc23b785dc6dd0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_013.png",
+      "sha256": "5b5c68b3531484491f150fbe3ae263ccfc808c8e7b4a2478b93374b53601971e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_014.png",
+      "sha256": "b2d20f1959e2d9701814073bf2c91917b63daafe7177b88f9500b2309a781499"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_015.png",
+      "sha256": "e05b0b78d00831a6bd55e04703e93f67748270d38a3bd8b60f5295afbcb7030f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_016.png",
+      "sha256": "e1609f347b8ef920c93d72b7854aa8bcf084cd07bccc798ca6decf77d7fbba92"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_017.png",
+      "sha256": "3c178a3e3c014879242dce07203aa849cb2d7d0afbfa30529067482ab8a0013e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_018.png",
+      "sha256": "14b502fcaeec6e91d008e0ff65141ec8b655b47549d076a99bd94699795187a1"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/The_Tyger/sample_019.png",
+      "sha256": "c5908d64d889dec70471b9b151d0f59c7fe5e688b908ba3be0a8ba1f14a7980e"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_000.png",
+      "sha256": "080cf492a9e70aa302f64ea1cc2b5f81f1c7269b84fc1c553afd7def2f231d35"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_001.png",
+      "sha256": "16235d9756943f7bbf1b7118e7ab1257eb7cbc185c7ed03f732b489216e96547"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_002.png",
+      "sha256": "b19ae7d2d98545c097c1fb2f2011a3c8e5950bbb42e0fb9f3b4a14e29c603e52"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_003.png",
+      "sha256": "4273aa08d1f739f52699f76013f6b1a58eb8300dff46c502ac50122299a5d427"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_004.png",
+      "sha256": "341008b65f166da1c9b16bbb7274f38d020f1cf196cea443b5c027762622b027"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_005.png",
+      "sha256": "3618cff52fd3a6ad92e11dc4cf1c717fed3bff4ec10a82adb84d27048d0a4ed5"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_006.png",
+      "sha256": "1f4ac28419cc2ed6e1bb922c305b8eddd443fd500230917a40e55894f610a949"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_007.png",
+      "sha256": "852924056c30dacddbe44ade0856b493e92eaa0399fc463040a74dd53fd6e8f0"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_008.png",
+      "sha256": "5d82b3ab20bfd9faf022d0a5885743c380533adfc4cfb66011c0022968c66e58"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_009.png",
+      "sha256": "747f6e85b87a5c6bbfb8920e65700b51b79a66d58dd4de1003732c3716361c8a"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_010.png",
+      "sha256": "1701fdd4e1941505f56c2545eeec70adbd9c4b3025aab391ead27301ec22efbf"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_011.png",
+      "sha256": "db3b47fc26d27efb59b1299e69c2815daff0e841b13d49114275c02a9e6c389f"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_012.png",
+      "sha256": "ce0cabc9e2adbc414aac377701deb9b8b15370ecb0a891ab64d82dc5192836a4"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_013.png",
+      "sha256": "1f2f816487ee851f6aaf45ecd59261a0b9cf1ffa2fce5c4a7ac8627f48d79702"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_014.png",
+      "sha256": "1c183a5b901cf198a31d85b587c8657b97421154a031895848d596a9735f5768"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_015.png",
+      "sha256": "9a97d3b0267b744a8b3f5a640c65be02511b3ef85a1a75846ef61de247c6bc15"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_016.png",
+      "sha256": "852824580eed10207e524854ff575eee26d0302211f0ba46d2b09e2de99e93af"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_017.png",
+      "sha256": "e7ce5347ba3d1647c8f74ddca885f0ada5b0f6e95a68862707e50dd8c237086c"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_018.png",
+      "sha256": "ccc606e1e4342acb17b7c154c6f4b5773c5da02c1f05017c09e1830e498d9b3b"
+    },
+    {
+      "model_label": "stable_diffusion",
+      "source": "ENGE3940AI_and_Lang/project/ENGE3940V3_SD/Images/Romanticism/To_a_Skylark/sample_019.png",
+      "sha256": "39a4d286f2a79eca2ecdb2b5b5d6f08f48e50ce3938d5c339d176caee3932a3f"
+    }
+  ],
+  "source_code": [
+    {
+      "source": "ENGE3940AI_and_Lang/project/probDenseChart.py",
+      "sha256": "3bd095384ef46807ec92397d2cb2df59e665fc6f09b1eda0637de0f090416a2d"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/imageCombine.py",
+      "sha256": "13953d183179661b71021cdab7babf9fd0c11397ffe15c8137d59b6b91ce190d"
+    },
+    {
+      "source": "ENGE3940AI_and_Lang/project/analysis.md",
+      "sha256": "037ab780316cb6e1d1c310952094b9137f45e53129f0cf2460fea9ebb0aba760"
+    }
+  ],
+  "visual_qa": {
+    "inspected": [
+      "assets/poetry-samples.jpg",
+      "assets/archive/flux-results.png",
+      "assets/archive/stable-diffusion-results.png",
+      "assets/archive/flux-density.png",
+      "assets/archive/poster-workflow.png",
+      "assets/archive/poster-method-and-dataset.png",
+      "assets/archive/stable-diffusion-density.png"
+    ],
+    "result": "Readable labels, intact panels, student-number header excluded from crops. Archive labels are historical, not corrected findings."
+  },
+  "publication_note": {
+    "date": "2026-10-07",
+    "published_files": "Every artifact_files destination above is in this repository with the recorded output_sha256.",
+    "not_published": [
+      "source_images: the 400 PNG files are recorded by hash only; the images themselves are not in this repository.",
+      "source_code: the original course scripts and analysis note are recorded by hash only and are not in this repository.",
+      "Every source path above refers to the original course folder, which is not published."
+    ],
+    "added_after_recorded_date": [
+      {
+        "destination": "assets/banner.png",
+        "source": [
+          "assets/flux-imagism.jpg",
+          "assets/flux-romanticism.jpg"
+        ],
+        "output_sha256": "5f0b1223be3949c821bb9c3d53a9b07323995af8343fa25962f78bfeebe546d7",
+        "transformation": "scripts/make_banner.py with default arguments: second tile of each poem row, cropped from the 5x5 sheet, resized to 300x300 with Lanczos, corners rounded, Helvetica labels on macOS; no image content generated",
+        "kind": "illustrative preview"
+      }
+    ]
+  }
+}

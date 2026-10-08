@@ -1,0 +1,40 @@
+{
+  "unit_of_analysis": "Poem; counts are read from each model table",
+  "group_counts": {
+    "flux": {
+      "Imagism": 5,
+      "Romanticism": 5
+    },
+    "stable_diffusion": {
+      "Imagism": 5,
+      "Romanticism": 5
+    }
+  },
+  "warning": "Exploratory only. Duplicate cross-model scores and selection/length confounds remain unresolved.",
+  "results": {
+    "flux": {
+      "student_equal_variance": {
+        "t": -2.306797398097612,
+        "p": 0.04993812263654893,
+        "status": "computed"
+      },
+      "welch": {
+        "t": -2.306797398097612,
+        "p": 0.07626805587063908,
+        "status": "computed"
+      }
+    },
+    "stable_diffusion": {
+      "student_equal_variance": {
+        "t": -2.005046045892574,
+        "p": 0.07988919026502708,
+        "status": "computed"
+      },
+      "welch": {
+        "t": -2.005046045892574,
+        "p": 0.09286676165557278,
+        "status": "computed"
+      }
+    }
+  }
+}

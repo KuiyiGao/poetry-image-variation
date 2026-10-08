@@ -1,0 +1,217 @@
+{
+  "date": "2026-09-18",
+  "python_version": "3.14.0",
+  "packages": {
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0"
+  },
+  "checks": [
+    {
+      "check": "Saved descriptive report equals a fresh computation",
+      "passed": true
+    },
+    {
+      "check": "Two expected cross-model exact score matches are detected",
+      "passed": true
+    },
+    {
+      "check": "Every model has five poems and 100 reported images in each group",
+      "passed": true
+    },
+    {
+      "check": "flux: preserved source CSV SHA256",
+      "passed": true
+    },
+    {
+      "check": "stable_diffusion: preserved source CSV SHA256",
+      "passed": true
+    },
+    {
+      "check": "Python syntax: make_grid.py",
+      "passed": true
+    },
+    {
+      "check": "Python syntax: summarize.py",
+      "passed": true
+    },
+    {
+      "check": "Python syntax: compare_ttests.py",
+      "passed": true
+    },
+    {
+      "check": "Summary runs outside the repository working directory",
+      "passed": true
+    },
+    {
+      "check": "Duplicate poem rows are rejected",
+      "passed": true
+    },
+    {
+      "check": "Missing score columns are rejected",
+      "passed": true
+    },
+    {
+      "check": "FLUX Student p reproduces the historical .0499 label",
+      "passed": true
+    },
+    {
+      "check": "Welch FLUX p exceeds .05",
+      "passed": true
+    },
+    {
+      "check": "SD Student p reproduces historical .0799 label",
+      "passed": true
+    },
+    {
+      "check": "flux: dependency-free t statistic matches SciPy",
+      "passed": true
+    },
+    {
+      "check": "stable_diffusion: dependency-free t statistic matches SciPy",
+      "passed": true
+    },
+    {
+      "check": "Contact sheet dimensions match 5 x 4 tiles",
+      "passed": true
+    },
+    {
+      "check": "Contact sheet records 20 source hashes",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: data/flux.csv",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/ENGE3940V3/final_variance_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: data/stable_diffusion.csv",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/ENGE3940V3_SD/final_variance_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/flux-imagism.jpg",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/combined_grid_Flux_Imagism.jpg",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/flux-romanticism.jpg",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/combined_grid_Flux_Romanticism.jpg",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/flux-results.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/projFigure/Flux.1_Final.png",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/stable-diffusion-results.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/projFigure/SD_Final.png",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/flux-density.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/Probability_Density_Map_Flux.png",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/stable-diffusion-density.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/project/Probability_Density_Map_SD.png",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/poetry-samples.jpg",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/poster-workflow.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/PosterV2.pdf",
+      "passed": true
+    },
+    {
+      "check": "Artifact checksum: assets/archive/poster-method-and-dataset.png",
+      "passed": true
+    },
+    {
+      "check": "Source unchanged: ENGE3940AI_and_Lang/PosterV2.pdf",
+      "passed": true
+    },
+    {
+      "check": "All 400 source images retain recorded hashes",
+      "passed": true
+    },
+    {
+      "check": "Dependency-free summary runs in the bundled Python without SciPy",
+      "passed": true
+    }
+  ],
+  "scope": "Local data audit, Student/Welch recomputation, command-line behavior, source checksum verification and contact-sheet generation. No generation/embedding runs.",
+  "not_reproduced": [
+    "Image generation",
+    "CLIP embedding and score construction"
+  ],
+  "package_sources_changed": false,
+  "visual_qa": {
+    "combined_sample_image": "Inspected; labels readable and panels intact",
+    "poster_crops": "Inspected; diagrams intact and student-number header excluded",
+    "original_plots": "Inspected both model result and density images",
+    "grid_smoke_test": "Inspected the 5 x 4 sheet of 20 actual source images"
+  },
+  "later_checks": {
+    "date": "2026-10-07",
+    "note": "Checks run when the repository was prepared for publication. The 2026-09-18 checks above are kept as recorded.",
+    "python_version": "3.13.9",
+    "packages": {
+      "scipy": "1.18.1",
+      "Pillow": "12.3.0"
+    },
+    "checks": [
+      {
+        "check": "python -m unittest discover -s tests -v: 10 tests",
+        "passed": true
+      },
+      {
+        "check": "Python 3.9.6 without SciPy or Pillow: 10 tests run, 5 skipped, 0 failures",
+        "passed": true
+      },
+      {
+        "check": "reports/summary.json and reports/ttest-comparison.json regenerated with the current scripts; every numeric value equals the 2026-09-18 file (later script changes only reworded labels and added group counts and status fields)",
+        "passed": true
+      },
+      {
+        "check": "scripts/make_banner.py run from outside the repository reproduces assets/banner.png byte for byte on macOS",
+        "passed": true
+      },
+      {
+        "check": "scripts/make_banner.py with the fallback font changes only the two label areas",
+        "passed": true
+      }
+    ]
+  }
+}
